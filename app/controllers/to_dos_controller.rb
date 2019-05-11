@@ -46,6 +46,6 @@ class ToDosController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def to_do_params
-      params.require(:to_do).permit(:title, :description, :completed, :project_id)
+      params.permit(:title, :description, :completed, :project_id)
     end
 end
